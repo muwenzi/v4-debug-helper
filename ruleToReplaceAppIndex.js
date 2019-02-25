@@ -46,8 +46,7 @@ const insertConfig = (html, configScript, redirectIndex) => {
 module.exports = {
     summary: 'a rule to replace app index',
     *beforeSendResponse(requestDetail, responseDetail) {
-
-        if(hackUrlReg.test(requestDetail.url)) {
+        if(hackUrlReg.test(requestDetail.url) || requestDetail.url.includes('10.133.253.41:8080')) {
             const redirectIndex = getRedirectUrl(requestDetail.url)
             const newResponse = responseDetail.response;
             const body = newResponse.body.toString();
