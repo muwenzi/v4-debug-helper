@@ -21,7 +21,11 @@
       "FapiaoLookupConfig",
       "FapiaoIssue",
       "ProformaManagerAP",
-      "ProformaManagerAR"
+      "ProformaManagerAR",
+      "RematchDemo",
+      "Proforma",
+      "PremadeInvoice",
+      "BillingProposal"
     ],
     "http://localhost:8102": [
       "BrandhouseLogisticsManager", 
